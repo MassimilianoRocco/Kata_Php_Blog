@@ -42,9 +42,10 @@
                             <button type="submit">Delete</button>
                         </form>
 
-                        <a href=\'\'>
-                            <button>Update</button>
-                        </a>
+                        <form action="postEdit.php" method="POST"   style="display:inline;">
+                            <input type="hidden" name="post_id" value="' . $row ['id'] . '">
+                            <button type="submit">Update</button>
+                        </form>
 
                         <form action="postShow.php" method="POST"   style="display:inline;">
                             <input type="hidden" name="post_id" value="' . $row ['id'] . '">
