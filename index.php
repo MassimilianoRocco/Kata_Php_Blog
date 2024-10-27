@@ -13,7 +13,15 @@
     <header>
         <h2>My Blog</h2>
         <div class="login_container">
-            <a href="./login.php">LOGIN</a>
+            <?php 
+                session_start();
+                if (isset($_SESSION['username'])) {
+                    echo " <a href='./login.php'>Mio Profilo</a>";
+                    } 
+                else {
+                    echo " <a href='./login.php'>Accedi</a>";
+                    }
+            ?>
         </div>
     </header>
 

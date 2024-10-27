@@ -51,8 +51,7 @@
         }
         else {
             echo '<p>Post non trovato.</p>';
-            exit; 
-            // Termina l'esecuzione dello script se non ci sono risultati
+            exit(); 
         }
         ?>
     </main>

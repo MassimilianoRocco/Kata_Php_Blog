@@ -8,6 +8,14 @@
     <title>Login</title>
 </head>
 
+<?php
+    session_start();
+    if(isset($_SESSION['username'])){ 
+        header('Location: ./auth/myList.php');
+        exit();
+    };
+?>
+
 <body>
     <!-- HEADER -->
     <header>
