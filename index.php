@@ -26,7 +26,6 @@
     </header>
 
     <main>
-        <h2> </h2>
         <?php
         require 'database.php';
 
@@ -39,12 +38,13 @@
             while ($row = $results->fetch_assoc()) {
                 echo '
                 <div class="card">
-                    <h3>' . $row['title'] . '</h3>
-                    <p>' . $row['content'] . '</p>
-                    <a href=\'\'>
-                        <button>Read More</button>
-                    </a>
-
+                    <div class="img_box">
+                        <img src='. $row['image'] .'>
+                    </div>
+                    <div class="info_container">
+                        <h3>' . $row['title'] . '</h3>
+                        <p>' . $row['content'] . '</p>
+                    </div>
                 </div>
                 ';
             }

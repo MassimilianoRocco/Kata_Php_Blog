@@ -5,6 +5,7 @@
 }
 body{
     font-family: sans-serif;
+    background-color: rgb(252, 243, 243);
 }
 
 header{
@@ -33,32 +34,39 @@ main{
 }
 
 .card{
-    width: calc((100% / 2) - 2rem);
-    height: 500px;
-    padding: 1.5rem;
+    width: 80%;
+    height: 600px;
+    padding: 0.5rem;
     border: 1px solid black;
     border-radius: 5px;
+    display: flex;
+    background-color: #E6E6FA;
 
-    h3{
-        text-align: center;
-        margin-bottom: 1rem;
-        height: 10%;
+    .img_box{
+        width: 50%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
     }
-    p{
-        height: 80%;
-        overflow: auto;
+
+    .info_container{
+        width: 50%;
+
+        h3{
+            text-align: center;
+            margin-bottom: 0.5rem;
+            height: 10%;
+        }
+        p{
+            height: 90%;
+            overflow: auto;
+            padding: 1rem;
+        }
     }
-    a{
-        display: block;
-        text-align: right;
-        height: 10%;
-        margin-top: 0.5rem;
-            button{
-                padding: 0.6rem;
-                background-color: orange;
-                width: 6rem;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-    }
+
 }

@@ -23,6 +23,8 @@
 
     <main>
         <form action="./newPostStore.php" method="POST" class="form_container">
+            <h2>Nuovo Post</h2>
+            
             <div class="box">
                 <label for="title">Titolo:</label><br>
                 <input type="text" id="title" name="title" required>
@@ -30,7 +32,7 @@
 
             <div class="box">
                 <label for='content'>Contenuto:</label><br>
-                <input type="text" id="content" name="content" required>
+                <textarea type="text" id="content" name="content" required></textarea>
             </div>
 
             <div class="box">

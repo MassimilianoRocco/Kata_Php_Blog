@@ -42,6 +42,8 @@
 
     <main>
         <form action="./postUpdate.php" method="POST" class="form_container">
+        <h2>Modifica Post</h2>
+        
             <div class="box">
                 <label for="title">Titolo:</label><br>
                 <input type="text" id="title" name="title"
@@ -51,9 +53,7 @@
 
             <div class="box">
                 <label for='content'>Contenuto:</label><br>
-                <input type="text" id="content" name="content"
-                    value="<?php echo htmlspecialchars($row['content']) ?>"
-                    required>
+                <textarea type="text" id="content" name="content" required><?php echo htmlspecialchars($row['content']) ?></textarea>
             </div>
 
             <div class="box">
