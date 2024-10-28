@@ -21,6 +21,7 @@
         </div>
     </header>
 
+    <!-- MAIN -->
     <main>
         <form action="./newPostStore.php" method="POST" class="form_container">
             <h2>Nuovo Post</h2>

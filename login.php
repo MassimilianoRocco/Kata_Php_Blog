@@ -8,6 +8,7 @@
     <title>Login</title>
 </head>
 
+<!-- SCRIPT -->
 <?php
     session_start();
     if(isset($_SESSION['username'])){ 

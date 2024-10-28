@@ -21,6 +21,7 @@
         </div>
     </header>
 
+    <!-- DB QUERY -->
     <?php
     require '../database.php';
 
@@ -40,6 +41,7 @@
     }
     ?>
 
+    <!-- MAIN  -->
     <main>
         <form action="./postUpdate.php" method="POST" class="form_container">
         <h2>Modifica Post</h2>

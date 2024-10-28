@@ -21,6 +21,7 @@
         </div>
     </header>
 
+    <!-- MAIN -->
     <main>
         <?php
         require '../database.php';

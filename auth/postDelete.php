@@ -12,7 +12,7 @@
         exit();
     } 
     else {
-        die('Errore durante l\'eliminazione del post');
+        exit('Errore durante l\'eliminazione del post');
     }
 
 ?>
